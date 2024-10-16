@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +2 | cut -d/ -f1 | rev | cut -d- -f2- | rev | LC_ALL=C sort --ignore-case | uniq -c | sort --ignore-case -nr | head -11 | cut -c9-
+tail -n +2 | cut -d/ -f1 | rev | cut -d- -f2- | rev | LC_ALL=C sort --ignore-case | uniq -c | sort --ignore-case -nr | head -11 | cut -c9- | cut -d" " -f1
