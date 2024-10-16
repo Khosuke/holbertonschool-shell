@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +2 | LC_ALL=C sort | uniq -c | sort -r | cut -c9- | cut -d- -f2
+tail -n +2 nasaTSVlogs | cut -d/ -f1 | rev | cut -d- -f2- | rev | LC_ALL=C sort --ignore-case | uniq -c | sort --ignore-case -nr | cut -c9-
