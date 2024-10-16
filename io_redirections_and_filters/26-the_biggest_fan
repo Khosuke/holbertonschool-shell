@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +2 | LC_ALL=C sort | uniq -c | sort -r | cut -c9- | rev | cut -d- -f2 | rev
+tail -n +2 | LC_ALL=C sort | uniq -c | sort -r | cut -c9- | cut -d- -f2
