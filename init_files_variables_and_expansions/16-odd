@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | cut -c6- | grep -v "2\|4\|6\|8\|0" | cut -c3-
+cat -n | cut -c6- | grep "[13579][[:space:]].*" | cut -c3-
