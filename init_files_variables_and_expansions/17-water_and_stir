@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(($WATER=$(echo $WATER | tr "w,a,t,e,r" "1,2,3,4,5") + $STIR=$(echo $STIR | tr "s,t,i,r,." "1,2,3,4,5"))) | tr "1-9" "b,e,s,t,c,h,o,l" 
